@@ -1,2 +1,2 @@
-# Leetcode-assignment
-building leetcode from scratch 
+# Code Arena
+place where people can come and test their codes 
