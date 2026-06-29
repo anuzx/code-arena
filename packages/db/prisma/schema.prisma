@@ -14,11 +14,17 @@ datasource db {
 
 model submissions {
   id       String           @id @default(uuid())
-  language String
+  language Languages
   code     String
-  status   SubmissionStatus
+  status   SubmissionStatus @default(pending)
   output   String?
   Error    String?
+}
+
+enum Languages {
+  cpp
+  js
+  python
 }
 
 enum SubmissionStatus {
